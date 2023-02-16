@@ -1,6 +1,6 @@
 oc new-project bluewills
 oc new-app --name rocky --docker-image quay.io/redhattraining/hello-world-nginx:v1.0
-oc expose rocky svc 
+oc expose svc rocky 
 oc adm taint node master03 oselabs:NoSchedule
 oc new-project area51
 oc new-app --name oxcart --docker-image quay.io/redhattraining/hello-world-nginx:v1.0
